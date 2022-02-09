@@ -17,16 +17,6 @@ interface Item {
   address: string;
 }
 
-const originData: Item[] = [];
-for (let i = 0; i < 100; i++) {
-  originData.push({
-    key: i.toString(),
-    name: `Edrward ${i}`,
-    age: 32,
-    address: `London Park no. ${i}`,
-  });
-}
-
 interface Props {
   data: any;
   deleteTable: () => void;
